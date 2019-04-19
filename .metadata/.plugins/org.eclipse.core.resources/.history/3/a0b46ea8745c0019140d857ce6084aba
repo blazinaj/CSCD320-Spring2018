@@ -1,0 +1,46 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		List<String> hand = new ArrayList<String>();
+		Scanner scan = new Scanner(System.in);
+		
+		String card;
+		
+		while ((card = scan.next()) != "00") {
+			for (int i = 0; i < 5; i++) {
+				hand.add(card);
+				hand.
+			}
+			System.out.println(InsertionSort(hand));
+			
+		}
+
+	}
+	
+	public static String InsertionSort(List<String> unsortedHand){
+		List<String> sortedHand = new ArrayList<String>();
+		String res = "";
+		
+		for (int i = 0; i < 5; i++) {
+			res += sortedHand.get(i);
+			if (i != 4) {
+				res += " ";
+			}
+		}
+		
+		
+		return res;
+	}
+	
+	public static int compareCards(String firstCard, String secondCard) {
+		char firstCardValue = firstCard.charAt(0);
+		char firstCardSuit = firstCard.charAt(1);
+		char secondCardValue = secondCard.charAt(0);
+		char secondCardSuit = secondCard.charAt(1);
+	}
+
+}

@@ -1,0 +1,91 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		List<String> hand = new ArrayList<String>();
+		Scanner scan = new Scanner(System.in);
+		
+		String card;
+		
+		while ((card = scan.next()) != "00") {
+			for (int i = 0; i < 5; i++) {
+				hand.add(card);
+			}
+			
+			System.out.println(InsertionSort(hand));
+		}
+
+	}
+	
+	public static String InsertionSort(List<String> hand){
+		List<String> sortedHand = new ArrayList<String>();
+		String res = "";
+		
+		for(int i = 1; i <= 5; i++) {
+			String key = hand.get(i);
+			int j = i - 1;
+			
+			while ( j >= 0 && compareCards(key, hand.get(j)) > 0) {
+				hand.set(j + 1, hand.get(j));
+				j--;
+			}
+			hand.set(j + 1, key);
+		}
+		
+		for (int i = 0; i < 5; i++) {
+			res += hand.get(i);
+			if (i != 4) {
+				res += " ";
+			}
+		}
+		
+		
+		return res;
+	}
+	
+	
+	public static int compareCards(String firstCard, String secondCard) {
+		char firstCardValue = firstCard.charAt(0);
+		char firstCardSuit = firstCard.charAt(1);
+		char secondCardValue = secondCard.charAt(0);
+		char secondCardSuit = secondCard.charAt(1);
+		
+		Map<Character, Integer> suit = new HashMap<Character, Integer>();
+		suit.put('S', 1);
+		suit.put('H', 2);
+		suit.put('C', 3);
+		suit.put('D', 4);
+		
+		Map<Character, Integer> faceCard = new HashMap<Character, Integer>();
+		faceCard.put('T', 10);
+		faceCard.put('J', 11);
+		faceCard.put('Q', 12);
+		faceCard.put('K', 13);
+		
+		// If Suits are the same, compare values
+		if (firstCardSuit == secondCardSuit) {
+			if (firstCardValue == secondCardValue) {
+				return 0;
+			}
+			else if (faceCard.get(firstCardValue) < faceCard.get(secondCardValue)) {
+				return -1;
+			}
+			else {
+				return 1;
+			}
+		}
+		
+		// Compare Suits
+		if (suit.get(firstCardSuit) < suit.get(secondCardSuit)) {
+			return -1;
+		}
+		else {
+			return 1;
+		}
+	}
+}
