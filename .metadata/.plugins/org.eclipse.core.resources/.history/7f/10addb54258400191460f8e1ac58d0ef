@@ -1,0 +1,48 @@
+package BinarySearchTree;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		BinarySearchTree tree = new BinarySearchTree();
+		Scanner scan = new Scanner(System.in);
+		
+		String input;
+		int key;
+		char value;
+		
+		do {
+			input = scan.next();
+			switch (input) {
+			case "INSERT":
+	            Scanner innerScan = new Scanner(scan.nextLine());
+				while ((innerScan.hasNext())) {
+					key = Integer.parseInt(innerScan.next());
+					value = innerScan.next().charAt(0);
+					tree.insert(key,  value);
+				}
+	            innerScan.close();
+	            break;
+			case "POSTORDER":
+				tree.postOrder();
+				break;
+			case "INORDER":
+				tree.inOrder();
+				break;
+			case "PREORDER":
+				tree.preOrder();
+				break;
+			case "DELETE":
+				Scanner deleteScanner = new Scanner(scan.nextLine());
+				while ((deleteScanner.hasNext())) {
+					key = Integer.parseInt(deleteScanner.next());
+					tree.deleteNode(key);
+				}
+				deleteScanner.close();
+				break;
+			}
+		} while (!input.equals("EXIT"));
+		scan.close();
+	}
+}

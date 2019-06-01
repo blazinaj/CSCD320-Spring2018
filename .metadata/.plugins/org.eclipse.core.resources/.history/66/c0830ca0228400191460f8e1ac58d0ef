@@ -1,0 +1,57 @@
+package BinarySearchTree;
+
+public class BinarySearchTree {
+	private BSTNode rootNode = null;
+	
+	protected void insertNode(BSTNode nodeToInsert) {
+		rootNode = insertNode(nodeToInsert, rootNode);
+	}
+	
+	private BSTNode insertNode(BSTNode nodeToInsert, BSTNode rootNode) {
+		if (rootNode == null) {
+			rootNode = nodeToInsert;
+			return rootNode;
+		}
+		
+		if (nodeToInsert.getKey() < rootNode.getKey())
+			rootNode.leftChild = insertNode(nodeToInsert, rootNode.leftChild);
+		
+		if (nodeToInsert.getKey() >= rootNode.getKey())
+			rootNode.rightChild = insertNode(nodeToInsert, rootNode.rightChild);
+		
+		return rootNode;
+	}
+	
+	protected void treeTraversal(String type) {
+		switch (type) {
+		case "INORDER":
+			inOrderTraversal(this.rootNode);
+			break;
+		case "POSTORDER":
+			postOrderTraversal(this.rootNode);
+			break;
+		case "PREORDER":
+			preOrderTraversal(this.rootNode);
+			break;
+		default:
+			break;
+		}
+		System.out.println();
+	}
+
+	private void inOrderTraversal(BSTNode rootNode) {
+		if (rootNode != null) {
+			inOrderTraversal(rootNode.leftChild);
+			rootNode.printValue();
+			inOrderTraversal(rootNode.rightChild);
+		}
+	}
+	
+	private void postOrderTraversal(BSTNode rootNode) {
+		if (rootNode != null) {
+			postOrderTraversal(rootNode.leftChild);
+			postOrderTraversal(rootNode.rightChild);
+			rootNode.printValue();
+		}
+	}
+}

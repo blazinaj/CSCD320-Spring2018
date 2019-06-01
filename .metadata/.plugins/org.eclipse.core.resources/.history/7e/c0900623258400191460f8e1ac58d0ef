@@ -1,0 +1,97 @@
+package BinarySearchTree;
+
+public class BinarySearchTree {
+	private BSTNode rootNode = null;
+	
+	protected void insertNode(BSTNode nodeToInsert) {
+		rootNode = insertNode(nodeToInsert, rootNode);
+	}
+	
+	private BSTNode insertNode(BSTNode nodeToInsert, BSTNode rootNode) {
+		if (rootNode == null) {
+			rootNode = nodeToInsert;
+			return rootNode;
+		}
+		
+		if (nodeToInsert.getKey() < rootNode.getKey())
+			rootNode.leftChild = insertNode(nodeToInsert, rootNode.leftChild);
+		
+		if (nodeToInsert.getKey() >= rootNode.getKey())
+			rootNode.rightChild = insertNode(nodeToInsert, rootNode.rightChild);
+		
+		return rootNode;
+	}
+	
+	protected void removeNodeByKey(Integer keyToRemove) {
+		this.rootNode = removeNodeByKey(keyToRemove, this.rootNode);
+	}
+	
+	private BSTNode removeNodeByKey(Integer keyToRemove, BSTNode rootNode) {
+		if (rootNode == null) {
+			return rootNode;
+		}
+		if (rootNode.getKey() > keyToRemove) {
+			rootNode.leftChild = removeNodeByKey(keyToRemove, rootNode.leftChild);
+		}
+		if (rootNode.getKey() <= keyToRemove) {
+			rootNode.rightChild = removeNodeByKey(keyToRemove, rootNode.rightChild);
+		}
+		if (rootNode.getKey() == keyToRemove) {
+			if (rootNode.leftChild == null)
+				return rootNode.rightChild;
+			if (rootNode.rightChild == null)
+				return rootNode.leftChild;
+			rootNode.setKey(findMinimumKey(rootNode.rightChild));
+		}
+	}
+	
+	private BSTNode findMinimumNode(BSTNode rootNode) {
+		BSTNode smallestSoFar = rootNode;
+		while (rootNode.leftChild != null) {
+			smallestSoFar = rootNode.leftChild;
+			rootNode = rootNode.leftChild;
+		}
+		return smallestSoFar;
+	}
+
+	protected void treeTraversal(String type) {
+		switch (type) {
+		case "INORDER":
+			inOrderTraversal(this.rootNode);
+			break;
+		case "POSTORDER":
+			postOrderTraversal(this.rootNode);
+			break;
+		case "PREORDER":
+			preOrderTraversal(this.rootNode);
+			break;
+		default:
+			break;
+		}
+		System.out.println();
+	}
+
+	private void inOrderTraversal(BSTNode rootNode) {
+		if (rootNode != null) {
+			inOrderTraversal(rootNode.leftChild);
+			rootNode.printValue();
+			inOrderTraversal(rootNode.rightChild);
+		}
+	}
+	
+	private void postOrderTraversal(BSTNode rootNode) {
+		if (rootNode != null) {
+			postOrderTraversal(rootNode.leftChild);
+			postOrderTraversal(rootNode.rightChild);
+			rootNode.printValue();
+		}
+	}
+	
+	private void preOrderTraversal(BSTNode rootNode) {
+		if (rootNode != null) {
+			rootNode.printValue();
+			preOrderTraversal(rootNode.leftChild);
+			preOrderTraversal(rootNode.rightChild);
+		}
+	}
+}

@@ -1,0 +1,20 @@
+package BinarySearchTree;
+
+public class BinarySearchTree {
+	private BSTNode rootNode = null;
+	
+	protected void insertNode(BSTNode nodeToInsert) {
+		
+	}
+	
+	private BSTNode insertNode(BSTNode nodeToInsert, BSTNode rootNode) {
+		if (rootNode == null) {
+			rootNode = nodeToInsert;
+			return rootNode;
+		}
+		
+		if (nodeToInsert.getKey() < rootNode.getKey())
+			rootNode.leftChild = insertNode(nodeToInsert, rootNode.leftChild);
+		
+	}
+}

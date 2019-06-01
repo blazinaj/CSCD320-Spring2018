@@ -1,0 +1,20 @@
+package BinarySearchTree;
+
+public class BSTNode {
+	private Integer key;
+	private Character value;
+	BSTNode leftChild, rightChild;
+	
+	protected BSTNode(Integer key, Character value) {
+		this.key = key;
+		this.value = value;
+	}
+	
+	public Integer getKey() {
+		return this.key;
+	}
+	
+	public Character getValue() {
+		return this.value;
+	}
+}
