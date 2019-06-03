@@ -4,11 +4,11 @@ import java.util.PriorityQueue;
 import java.util.Scanner;
 
 class Node {
-    int freq;
-    char theChar;
-
     Node left;
     Node right;
+    
+    char theChar;
+    int freq;
 }
 
 class NodeComparator implements Comparator<Node>{
@@ -26,15 +26,15 @@ public class Huffman {
     huf.alphabet => "2 T 6 E 7 S"
     huf.encoded => "010110"
      */
-    public void createCode(Node root, String s){
-        if (root.left == null && root.right == null && Character.isLetter(root.theChar)){
-            this.encoded += s;
-            this.alphabet += root.freq + " " + root.theChar +  " ";
+    public void createCode(Node rootNode, String currentEncodedString){
+        if (Character.isLetter(rootNode.theChar) && rootNode.right == null && rootNode.left == null ){
+            this.encoded += currentEncodedString;
+            this.alphabet += rootNode.freq + " " + rootNode.theChar +  " ";
             return;
         }
 
-        createCode(root.left, s + "0");
-        createCode(root.right, s + "1");
+        createCode(rootNode.left, currentEncodedString + "0");
+        createCode(rootNode.right, currentEncodedString + "1");
     }
 
     public Huffman(String input) { //Constructor takes the input and populates alphabet and encoded

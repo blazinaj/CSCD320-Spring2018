@@ -7,7 +7,6 @@ public class Main {
     public static int sizeOfBoard;
     public static int widthOfInnerBoard;
     public static int heightOfInnerBoard;
-
     public static void main(String[] args){
         // [row][col]
         Scanner input = new Scanner(System.in);
@@ -23,94 +22,79 @@ public class Main {
             }
         }
 
-        boolean solution = SolveSoduku(0, 0);
-
+        boolean solution = SolveSoduku(board);
+        printBoard(board);
         if (!solution){
             System.out.println("CANT! WONT!");
             return;
         }else{
             System.out.println("Solution");
-            printBoard();
+            printBoard(board);
         }
     }
-
-    public static Boolean SolveSoduku(int currentRow, int currentCol){
-
-        int row = currentRow;
-        int col = currentCol;
-
-        if ( ++col >= sizeOfBoard){
-            col = 0;
-            row++;
-        }
-
-        if (row >= sizeOfBoard){
-            solutionIsFound = true;
-        }
-
-        if (solutionIsFound){
-            return true;
-        }
-
-        if (board[currentRow][currentCol] != 0) {
-            return SolveSoduku(++currentRow, ++currentCol);
-        }
-
-        boolean numberMightWork = false;
-
-        for (int i = 1; i <= sizeOfBoard; i++){
-            numberMightWork = checkRow(currentRow, i);
-
-            if (numberMightWork)
-                numberMightWork = checkColumn(currentCol, i);
-
-            if (numberMightWork)
-                numberMightWork = checkInnerSquare(currentRow, currentCol, i);
-
-            if (!numberMightWork){
-                continue;
-            }
-
-            board[currentRow][currentCol] = i;
-
-            boolean areWeDone = SolveSoduku(currentRow++, currentCol++);
-
-            if (areWeDone) {
-                return true;
-            }
-            else {
-                board[currentRow][currentCol] = 0;
-            }
-        }
-        return false;
+    
+    public static boolean solve() {
+    	return SolveSoduku(board);
     }
 
-
-    public static Boolean checkRow(int rowToCheck, int numberToCheck){
-        for (int columnPosition = 0; columnPosition < sizeOfBoard; columnPosition++){
-            if (board[rowToCheck][columnPosition] == numberToCheck){
-                return false;
-            }
-        }
-        return true;
+    public static Boolean SolveSoduku(Integer[][] solveBoard){
+    	
+    	Integer[] nextEmpty = findNextEmpty(solveBoard);
+    	
+    	if (nextEmpty == null) {
+    		printBoard(solveBoard);
+    		return true;
+    	}
+    	
+    	for (int i = 1; i < sizeOfBoard; i++) {
+    		if (isSafe(solveBoard, nextEmpty, i)) {
+    			solveBoard[nextEmpty[0]][nextEmpty[1]] = i;
+    			if (SolveSoduku(solveBoard)) {
+    				printBoard(solveBoard);
+    				System.out.println();
+    				return true;
+    			}
+    			else {
+    				solveBoard[nextEmpty[0]][nextEmpty[1]] = 0;
+    				printBoard(solveBoard);
+    				System.out.println();
+    			}
+    		}
+    	}
+    	return false;
+    	
+    }
+    
+    static Integer[] findNextEmpty(Integer[][] solveBoard) {
+    	Integer[] res = new Integer[2];
+    	for (int i = 0; i < solveBoard.length; i++) {
+    		for (int j = 0; j < solveBoard.length; j++) {
+    			if (solveBoard[i][j] == 0) {
+    				res[0] = i;
+    				res[1] = j;
+    				return res;
+    			}
+    		}
+    	}
+    	return null;
     }
 
-    public static Boolean checkColumn(int colToCheck, int numberToCheck){
-        for (int rowPosition = 0; rowPosition < sizeOfBoard; rowPosition++){
-            if (board[colToCheck][rowPosition] == numberToCheck){
-                return false;
-            }
-        }
-        return true;
-    }
+    
+    static Boolean isSafe(Integer[][] solveBoard, Integer[] nextEmpty, int numberToCheck) {
+    	int row = nextEmpty[0];
+    	int col = nextEmpty[1];
+    	
+    	for (int i = 0; i < solveBoard.length; i++) {
+    		if (solveBoard[row][i] == numberToCheck || solveBoard[i][col] == numberToCheck)
+    			return false;
+    	}
+    	
+        int startingCol = col / widthOfInnerBoard;
+        int startingRow = row / heightOfInnerBoard;
 
-    public static Boolean checkInnerSquare(int rowPosition, int colPosition, int numberToCheck){
-        int startingCol = colPosition / widthOfInnerBoard * widthOfInnerBoard;
-        int startingRow = rowPosition / heightOfInnerBoard * heightOfInnerBoard;
-
-        for (int i = 0; i < widthOfInnerBoard; i++){
-            for (int j = 0; j < heightOfInnerBoard; j++){
-                if (board[startingRow + i][startingCol + j] == numberToCheck){
+        for (int i = heightOfInnerBoard * startingRow; i < heightOfInnerBoard; i++){
+            for (int j = widthOfInnerBoard * startingCol; j < widthOfInnerBoard; j++){
+                if (solveBoard[i][j] == numberToCheck){
                     return false;
                 }
             }
@@ -119,7 +103,7 @@ public class Main {
         return true;
     }
 
-    public static void printBoard(){
+    public static void printBoard(Integer[][] board){
         for (int row = 0; row < sizeOfBoard; row++){
             for(int col = 0; col < sizeOfBoard; col++){
                     System.out.print(Integer.toString(board[row][col], 36).toUpperCase());
