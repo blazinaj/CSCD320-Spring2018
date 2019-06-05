@@ -15,52 +15,115 @@ public class Main {
         pieces[7] = new PuzzlePiece("7", Shape.positiveSquare, Shape.negativeCircle, Shape.positiveTriangle, Shape.negativeSquare);
         pieces[8] = new PuzzlePiece("8", Shape.positiveTwoTriangle, Shape.negativeTriangle, Shape.positiveCircle, Shape.negativeCircle);
 
-        if (solveOTP(0)){
+        if (solveOTP()){
             System.out.println("Success");
-            for (int i = 0; i < 9; i++){
-                solved[i].printPiece();
-            }
+            this.printAll();
         }
         else {
             System.out.println("Failure");
+            this.printAll();
         }
     }
 
-    Boolean CheckEdges(PuzzlePiece piece, int position){
-
-    }
-
-    public Boolean solveOTP() {
-        for (int i = 0; i < 9; i++){
-            if (!used(piece[i])){
-
+    void place(PuzzlePiece piece){
+        for (int i = 0; i < 9; i++) {
+            if (solved[i] == null){
+                solved[i] = piece;
+                piece.isUsed = true;
+                break;
             }
         }
     }
 
-    Boolean comparePieceEdges(Shape edgeOne, Shape edgeTwo){
-        if (edgeOne == Shape.positiveCircle && edgeTwo == Shape.negativeCircle)
+    boolean fitsTop(PuzzlePiece piece, int index){
+        if (index < 3){
             return true;
-        if (edgeOne == Shape.negativeCircle && edgeTwo == Shape.positiveCircle)
+        }
+
+        int topValue = piece.topEdge.getIntValue();
+        int bottomValue = solved[index - 3].bottomEdge.getIntValue();
+
+        if (topValue - bottomValue == 0){
             return true;
-        if (edgeOne == Shape.positiveSquare && edgeTwo == Shape.negativeSquare)
-            return true;
-        if (edgeOne == Shape.negativeSquare && edgeTwo == Shape.positiveSquare)
-            return true;
-        if (edgeOne == Shape.positiveTriangle && edgeTwo == Shape.negativeTriangle)
-            return true;
-        if (edgeOne == Shape.negativeTriangle && edgeTwo == Shape.negativeTriangle)
-            return true;
-        if (edgeOne == Shape.positiveTwoTriangle && edgeTwo == Shape.negativeTwoTriangle)
-            return true;
-        if (edgeOne == Shape.negativeTwoTriangle && edgeTwo == Shape.positiveTriangle)
-            return true;
+        }
         return false;
+    }
+
+    boolean fitsLeft(PuzzlePiece piece, int index){
+        if (index < 1){
+            return true;
+        }
+
+        if (piece.leftEdge.getIntValue() - solved[index - 1].rightEdge.getIntValue() == 0){
+            return true;
+        }
+        return false;
+    }
+
+    boolean fits(PuzzlePiece piece){
+
+        int index = -1;
+
+        for (int i = 0; i < 9; i++) {
+            if (solved[i] == null){
+                index = i;
+                break;
+            }
+        }
+
+        if (!fitsTop(piece, index)){
+            return false;
+        }
+
+        if (!fitsLeft(piece, index)){
+            return false;
+        }
+
+        return true;
+    }
+
+    public Boolean solveOTP() {
+        // Loop through all pieces
+        for (int i = 0; i < 9; i++){
+            // If piece is not being used
+            if (!pieces[i].isUsed){
+                // Check rotations
+                for (int rotation = 0; rotation < 4; rotation++){
+                    if (fits(pieces[i])){
+                        place(pieces[i]);
+                        if(solveOTP()){
+                            return true;
+                        }
+                    } else {
+                        pieces[i].rotateClockwise();
+                    }
+                }
+            }
+        }
+        return false;
+    }
+
+    public void printAll(){
+
+        System.out.println("              " + solved[0].topEdge + "                           " + solved[1].topEdge + "                       " + solved[2].topEdge);
+        System.out.println(solved[0].leftEdge + "   0   " + solved[0].rightEdge + "   " + solved[1].leftEdge + "   1   " + solved[2].rightEdge + "   " + solved[2].leftEdge + "   2   " + solved[2].rightEdge);
+        System.out.println("              " + solved[0].bottomEdge + "                              " + solved[1].bottomEdge + "                              " + solved[2].bottomEdge);
+        System.out.println("              " + solved[3].topEdge + "                           " + solved[4].topEdge + "                       " + solved[5].topEdge);
+        System.out.println(solved[3].leftEdge + "   3   " + solved[3].rightEdge + "   " + solved[4].leftEdge + "   4   " + solved[4].rightEdge + "   " + solved[5].leftEdge + "   5   " + solved[5].rightEdge);
+        System.out.println("              " + solved[3].bottomEdge + "              " + solved[4].bottomEdge + "              " + solved[5].bottomEdge);
+        System.out.println("              " + solved[6].topEdge + "                                 " + solved[7].topEdge + "                                 " + solved[8].topEdge);
+        System.out.println(solved[6].leftEdge + "   6   " + solved[6].rightEdge + "   " + solved[7].leftEdge + "   7   " + solved[7].rightEdge + "   " + solved[8].leftEdge + "   8   " + solved[8].rightEdge);
+        System.out.println("              " + solved[6].bottomEdge + "                             " + solved[7].bottomEdge + "                                   " + solved[8].bottomEdge);
+
+        System.out.println();
+
     }
 
     public class PuzzlePiece {
 
         public String id;
+
+        public boolean isUsed = false;
 
         public Shape topEdge;
         public Shape bottomEdge;
@@ -79,7 +142,7 @@ public class Main {
             Shape newRight = this.topEdge;
             Shape newBottom = this.rightEdge;
             Shape newLeft = this.bottomEdge;
-            Shape newTop = this.topEdge;
+            Shape newTop = this.leftEdge;
 
             this.rightEdge = newRight;
             this.bottomEdge = newBottom;
@@ -87,22 +150,40 @@ public class Main {
             this.topEdge = newTop;
         }
 
+
+
         public void printPiece(){
-            System.out.println("ID: " + id + " top is: " +topEdge);
+            System.out.println("ID: " + id + "        ");
+            System.out.println();
+            System.out.println("              " + topEdge);
+            System.out.println(leftEdge + "   P   " + rightEdge);
+            System.out.println("              " + bottomEdge);
+            System.out.println();
+            //System.out.println("ID: " + id + " top is: " + topEdge);
         }
 
 
     }
 
     enum Shape {
-        positiveSquare,
-        negativeSquare,
-        positiveTriangle,
-        negativeTriangle,
-        positiveCircle,
-        negativeCircle,
-        positiveTwoTriangle,
-        negativeTwoTriangle
+        positiveSquare(1),
+        negativeSquare(-1),
+        positiveTriangle(2),
+        negativeTriangle(-2),
+        positiveCircle(3),
+        negativeCircle(-3),
+        positiveTwoTriangle(4),
+        negativeTwoTriangle(-4);
+
+        private int intValue;
+
+        public int getIntValue(){
+            return this.intValue;
+        }
+
+        private Shape(int intValue){
+            this.intValue = intValue;
+        }
     }
 
 
