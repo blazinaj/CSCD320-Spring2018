@@ -1,19 +1,18 @@
 import java.util.Scanner;
 
 public class Main {
-    public Integer[][] board;
-    public Boolean solutionIsFound = false;
+    public int[][] board;
+    public boolean solutionIsFound = false;
     public int sizeOfBoard;
     public int widthOfInnerBoard;
     public int heightOfInnerBoard;
     public static void main(String[] args){
         // [row][col]
         Scanner input = new Scanner(System.in);
-        Integer sizeOfBoard = input.nextInt(36);
-        Integer widthOfInnerBoard = input.nextInt(36);
-        Integer heightOfInnerBoard = sizeOfBoard / widthOfInnerBoard;
-        Integer[][] board = new Integer[sizeOfBoard][sizeOfBoard];
-
+        int sizeOfBoard = input.nextInt(36);
+        int widthOfInnerBoard = input.nextInt(36);
+        int heightOfInnerBoard = sizeOfBoard / widthOfInnerBoard;
+        int[][] board = new int[sizeOfBoard][sizeOfBoard];
 
         for (int row = 0; row < sizeOfBoard; row++){
             for(int col = 0; col < sizeOfBoard; col++){
@@ -29,12 +28,12 @@ public class Main {
             System.out.println("CANT! WONT!");
             main.printBoard();
         }else{
-            System.out.println("Solution");
+            System.out.println("Solved:");
             main.printBoard();
         }
     }
 
-    public Main(Integer[][] board, Integer sizeOfBoard, Integer widthOfInnerBoard, Integer heightOfInnerBoard){
+    public Main(int[][] board, int sizeOfBoard, int widthOfInnerBoard, int heightOfInnerBoard){
         this.board = board;
         this.sizeOfBoard = sizeOfBoard;
         this.widthOfInnerBoard = widthOfInnerBoard;
@@ -53,7 +52,6 @@ public class Main {
                 return false;
             }
         }
-
         return true;
     }
 
@@ -63,7 +61,6 @@ public class Main {
                 return false;
             }
         }
-
         return true;
     }
 
@@ -78,30 +75,26 @@ public class Main {
                 }
             }
         }
-
         return true;
     }
-
-
 
     public void printBoard(){
         for (int row = 0; row < sizeOfBoard; row++){
             for(int col = 0; col < sizeOfBoard; col++){
                 System.out.print(Integer.toString(board[row][col], 36).toUpperCase());
                 System.out.print(" ");
-                if (col== sizeOfBoard / heightOfInnerBoard - 1){
+                if ((col + 1) % widthOfInnerBoard == 0){
                     System.out.print(" ");
                 }
             }
             System.out.println();
-            if (row  == sizeOfBoard / widthOfInnerBoard - 1){
+            if ((row + 1)  % heightOfInnerBoard == 0){
                 System.out.println();
             }
         }
     }
 
     Boolean solveSudoku() {
-
         for (int row = 0; row < this.sizeOfBoard; row++) {
             for (int column = 0; column < this.sizeOfBoard; column++) {
                 if (this.board[row][column] == 0) {
@@ -121,7 +114,6 @@ public class Main {
                 }
             }
         }
-
         return true;
     }
 

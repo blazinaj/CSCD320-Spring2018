@@ -1,0 +1,16 @@
+package BinarySearchTree.Tests;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import BinarySearchTree.Main;
+
+class MainTest {
+
+	@Test
+	void test_visible_case() {
+		Main.main(new String[] {"INSERT 4 E 3 E 6 E 2 H 1 T 5 Y 7 S", "POSTORDER", "INORDER", "DELETE 6 4 1 2", "PREORDER", "EXIT"});
+	}
+
+}
