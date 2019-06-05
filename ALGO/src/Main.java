@@ -89,12 +89,12 @@ public class Main {
             for(int col = 0; col < sizeOfBoard; col++){
                 System.out.print(Integer.toString(board[row][col], 36).toUpperCase());
                 System.out.print(" ");
-                if (col != 0 && col == widthOfInnerBoard - 1){
+                if (col== sizeOfBoard / heightOfInnerBoard - 1){
                     System.out.print(" ");
                 }
             }
             System.out.println();
-            if (row != 0 && row / sizeOfBoard == heightOfInnerBoard){
+            if (row  == sizeOfBoard / widthOfInnerBoard - 1){
                 System.out.println();
             }
         }
