@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cbce6f0-20fe-4eaf-af93-5269d4bfdf24" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ALGO/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ALGO/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/N-Matts/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/N-Matts/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/N-Matts/MainTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/N-Matts/NMatt.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NMatt.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OneToughPuzzle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OneToughPuzzle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OneToughPuzzle/out/production/OneToughPuzzle/Main$PuzzlePiece.class" beforeDir="false" afterPath="$PROJECT_DIR$/../OneToughPuzzle/out/production/OneToughPuzzle/Main$PuzzlePiece.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OneToughPuzzle/out/production/OneToughPuzzle/Main$Shape.class" beforeDir="false" afterPath="$PROJECT_DIR$/../OneToughPuzzle/out/production/OneToughPuzzle/Main$Shape.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OneToughPuzzle/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../OneToughPuzzle/src/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,8 +23,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="88" selection-start-line="88" selection-end-line="88" />
+            <state relative-caret-position="102">
+              <caret line="90" column="59" selection-start-line="90" selection-start-column="48" selection-end-line="90" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -39,7 +33,7 @@
         <entry file="file://$PROJECT_DIR$/src/MainTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
-              <caret line="21" column="31" selection-start-column="2" selection-end-line="99" selection-end-column="3" />
+              <caret line="21" column="29" selection-start-line="99" selection-start-column="2" selection-end-line="99" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -68,14 +62,6 @@
       </list>
     </option>
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      </list>
-    </option>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="375" />
     <option name="y" value="139" />
@@ -88,8 +74,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -106,6 +90,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -119,7 +105,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BST" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -215,6 +201,7 @@
       <workItem from="1558190571565" duration="3523000" />
       <workItem from="1559079652456" duration="378000" />
       <workItem from="1559778909826" duration="3380000" />
+      <workItem from="1559831989566" duration="2252000" />
     </task>
     <servers />
   </component>
@@ -251,12 +238,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7281000" />
+    <option name="totallyTimeSpent" value="9533000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1455" height="935" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.34551972" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22228146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -266,7 +254,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.34994584" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.45952678" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.45937163" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -295,21 +283,14 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>99</line>
+          <line>89</line>
           <properties />
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Board.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -317,17 +298,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainTest.java">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="31" selection-start-column="2" selection-end-line="99" selection-end-column="3" />
+        <state relative-caret-position="102">
+          <caret line="90" column="59" selection-start-line="90" selection-start-column="48" selection-end-line="90" selection-end-column="59" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/MainTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="88" selection-start-line="88" selection-end-line="88" />
+        <state relative-caret-position="357">
+          <caret line="21" column="29" selection-start-line="99" selection-start-column="2" selection-end-line="99" selection-end-column="3" />
         </state>
       </provider>
     </entry>

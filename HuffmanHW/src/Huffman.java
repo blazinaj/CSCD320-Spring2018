@@ -41,15 +41,17 @@ public class Huffman {
 
         HashMap<Character, Integer> alphabetDictionary = new HashMap<Character, Integer>();
 
+        // fill up dictionary
         for (char c = 'A'; c <= 'Z'; c++){
             alphabetDictionary.put(c, 0);
         }
 
         for (int i = 0; i < input.length(); i++){
+            System.out.println(input.toUpperCase().charAt(i));
             alphabetDictionary.replace(input.toUpperCase().charAt(i), alphabetDictionary.get(input.toUpperCase().charAt(i)) + 1);
         }
 
-        //System.out.println(alphabetDictionary);
+        System.out.println(alphabetDictionary);
 
         int numberOfChars = 0;
 
@@ -91,9 +93,9 @@ public class Huffman {
         }
 
         createCode(root, "");
+
+
     }
-
-
 }
 
 

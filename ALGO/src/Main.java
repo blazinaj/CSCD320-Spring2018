@@ -9,27 +9,35 @@ public class Main {
     public static void main(String[] args){
         // [row][col]
         Scanner input = new Scanner(System.in);
-        int sizeOfBoard = input.nextInt(36);
-        int widthOfInnerBoard = input.nextInt(36);
-        int heightOfInnerBoard = sizeOfBoard / widthOfInnerBoard;
-        int[][] board = new int[sizeOfBoard][sizeOfBoard];
+        while (true) {
+            int sizeOfBoard = input.nextInt(36);
 
-        for (int row = 0; row < sizeOfBoard; row++){
-            for(int col = 0; col < sizeOfBoard; col++){
-                Integer number = input.nextInt(36);
-                board[row][col] = number;
+            if (sizeOfBoard == 0){
+                break;
             }
-        }
 
-        Main main = new Main(board, sizeOfBoard, widthOfInnerBoard, heightOfInnerBoard);
+            int widthOfInnerBoard = input.nextInt(36);
+            int heightOfInnerBoard = sizeOfBoard / widthOfInnerBoard;
+            int[][] board = new int[sizeOfBoard][sizeOfBoard];
 
-        boolean solution = main.solveSudoku();
-        if (!solution){
-            System.out.println("CANT! WONT!");
-            main.printBoard();
-        }else{
-            System.out.println("Solved:");
-            main.printBoard();
+            for (int row = 0; row < sizeOfBoard; row++) {
+                for (int col = 0; col < sizeOfBoard; col++) {
+                    Integer number = input.nextInt(36);
+                    board[row][col] = number;
+                }
+            }
+
+            Main main = new Main(board, sizeOfBoard, widthOfInnerBoard, heightOfInnerBoard);
+
+            boolean solution = main.solveSudoku();
+            if (!solution) {
+                System.out.println("CANT! WONT!");
+                main.printBoard();
+            } else {
+                System.out.println("Solved:");
+                System.out.println();
+                main.printBoard();
+            }
         }
     }
 
@@ -41,9 +49,15 @@ public class Main {
     }
 
     Boolean checkAll(int rowToCheck, int colToCheck, int number) {
-        Boolean numberIsGood = checkRow(rowToCheck, number) && checkColumn(colToCheck, number) && checkInnerBox(rowToCheck, colToCheck, number);
 
-        return numberIsGood;
+        if (!checkInnerBox(rowToCheck, colToCheck, number))
+            return false;
+        if (!checkRow(rowToCheck, number))
+            return false;
+        if (!checkColumn(rowToCheck, number))
+            return false;
+
+        return true;
     }
 
     Boolean checkRow(int rowToCheck, int number) {

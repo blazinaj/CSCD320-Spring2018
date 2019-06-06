@@ -1,16 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7fa34e5-fdca-4bb8-a14d-30a2c4be5587" name="Default Changelist" comment="">
+    <list default="true" id="3da84855-a9ef-4169-bca0-53ca8e4f4ef9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../HuffmanHW/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../N-Matts/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ALGO/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ALGO/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ALGO/out/production/ALGO/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ALGO/out/production/ALGO/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ALGO/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ALGO/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BST/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BST/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BST/out/production/BST/Main$BinarySearchTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BST/out/production/BST/Main$BinarySearchTree.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BST/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BST/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HuffmanHW/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HuffmanHW/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HuffmanHW/out/production/HuffmanHW/Huffman.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HuffmanHW/out/production/HuffmanHW/Huffman.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HuffmanHW/out/production/HuffmanHW/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HuffmanHW/out/production/HuffmanHW/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HuffmanHW/out/production/HuffmanHW/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HuffmanHW/out/production/HuffmanHW/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HuffmanHW/out/production/HuffmanHW/NodeComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HuffmanHW/out/production/HuffmanHW/NodeComparator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HuffmanHW/src/Huffman.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HuffmanHW/src/Huffman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HuffmanHW/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HuffmanHW/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../N-Matts/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../N-Matts/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../N-Matts/out/production/N-Matts/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../N-Matts/out/production/N-Matts/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../N-Matts/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../N-Matts/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Red Black Tree/RedBlackTree/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Red Black Tree/RedBlackTree/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,15 +30,27 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="50" column="66" selection-start-line="50" selection-start-column="66" selection-end-line="50" selection-end-column="66" />
+            <state>
+              <folding>
+                <element signature="class#RBTNode#0;class#Main#0" />
+                <element signature="method#insert#0;class#Main#0" />
+                <element signature="class#TreeOperation#0;class#Main#0" />
+                <element signature="method#workOnTreeSingleNode#0;class#Main#0" />
+                <element signature="method#workOnTreeTwoNodes#0;class#Main#0" />
+                <element signature="method#deleteNodeRecursively#0;class#Main#0" />
+                <element signature="method#delete#0;class#Main#0" />
+                <element signature="method#inOrder#0;class#Main#0" />
+                <element signature="method#inOrderBlack#0;class#Main#0" />
+                <element signature="method#inOrderBlackRecursively#0;class#Main#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -48,14 +70,20 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Sudoku.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="399" />
+    <option name="y" value="148" />
     <option name="width" value="1296" />
     <option name="height" value="1000" />
   </component>
@@ -65,36 +93,26 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="ALGO" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ALGO" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ALGO" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ALGO" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="RBTNEW" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RBTNEW" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../HuffmanHW" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -111,7 +129,7 @@
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="ALGO" />
+      <module name="RBTNEW" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -127,140 +145,80 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c7fa34e5-fdca-4bb8-a14d-30a2c4be5587" name="Default Changelist" comment="" />
-      <created>1559732057724</created>
+      <changelist id="3da84855-a9ef-4169-bca0-53ca8e4f4ef9" name="Default Changelist" comment="" />
+      <created>1559837614919</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1559732057724</updated>
-      <workItem from="1559732062287" duration="7734000" />
-      <workItem from="1559834811591" duration="346000" />
+      <updated>1559837614919</updated>
+      <workItem from="1559837618217" duration="16000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8080000" />
+    <option name="totallyTimeSpent" value="16000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.39869988" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32936078" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Maven" order="6" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/OTP.java" />
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="50" column="66" selection-start-line="50" selection-start-column="66" selection-end-line="50" selection-end-column="66" />
+        <state>
+          <folding>
+            <element signature="class#RBTNode#0;class#Main#0" />
+            <element signature="method#insert#0;class#Main#0" />
+            <element signature="class#TreeOperation#0;class#Main#0" />
+            <element signature="method#workOnTreeSingleNode#0;class#Main#0" />
+            <element signature="method#workOnTreeTwoNodes#0;class#Main#0" />
+            <element signature="method#deleteNodeRecursively#0;class#Main#0" />
+            <element signature="method#delete#0;class#Main#0" />
+            <element signature="method#inOrder#0;class#Main#0" />
+            <element signature="method#inOrderBlack#0;class#Main#0" />
+            <element signature="method#inOrderBlackRecursively#0;class#Main#0" />
+          </folding>
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>ALGO</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>12</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>

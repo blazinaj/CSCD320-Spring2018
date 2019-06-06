@@ -99,7 +99,7 @@ public class Main {
             return rootNode;
         }
 
-        protected void removeNodeByKey(Integer keyToRemove) {
+        void removeNodeByKey(Integer keyToRemove) {
             this.rootNode = removeNodeByKey(keyToRemove, this.rootNode);
         }
 
@@ -107,22 +107,22 @@ public class Main {
             if (rootNode == null) {
                 return rootNode;
             }
-            if (rootNode.getKey() > keyToRemove) {
+            if (keyToRemove < rootNode.getKey()) {
                 rootNode.leftChild = removeNodeByKey(keyToRemove, rootNode.leftChild);
             }
-            else if (rootNode.getKey() <= keyToRemove) {
+            else if (keyToRemove > rootNode.getKey()) {
                 rootNode.rightChild = removeNodeByKey(keyToRemove, rootNode.rightChild);
             }
-            if (rootNode.getKey() == keyToRemove) {
+            else {
                 if (rootNode.leftChild == null)
                     return rootNode.rightChild;
                 if (rootNode.rightChild == null)
                     return rootNode.leftChild;
 
-                BSTNode minimumNode = findMinimumNode(rootNode.rightChild);
 
-                rootNode.setKey(minimumNode.getKey());
-                rootNode.setValue(minimumNode.getValue());
+                rootNode.setKey(findMinimumNode(rootNode.rightChild).getKey());
+                rootNode.setValue(findMinimumNode(rootNode.rightChild).getValue());
+                rootNode.rightChild = removeNodeByKey(rootNode.getKey(), rootNode.rightChild);
             }
             return rootNode;
         }
@@ -136,7 +136,7 @@ public class Main {
             return smallestSoFar;
         }
 
-        protected void treeTraversal(String type) {
+        void treeTraversal(String type) {
             switch (type) {
                 case "INORDER":
                     inOrderTraversal(this.rootNode);

@@ -2,62 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83146595-b89a-4f8a-b89e-3cca54b31031" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.metadata/.log" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/17/d00a7655715c0019140d857ce6084aba" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/18/a0f6776f765c0019140d857ce6084aba" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/22/40941556735c0019140d857ce6084aba" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/3/a0b46ea8745c0019140d857ce6084aba" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/33/b0dfbc712b62001919c4f35b917c416f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/43/b0c1fb142b62001919c4f35b917c416f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/4a/b0c2043e715c0019140d857ce6084aba" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/4b/b0aae4b4735c0019140d857ce6084aba" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/4d/d0ba32652b62001919c4f35b917c416f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/4f/a0a44cb0765c0019140d857ce6084aba" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/51/b0effcd52b62001919c4f35b917c416f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/56/903837ab765c0019140d857ce6084aba" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/5e/d05d75522b62001919c4f35b917c416f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/9a/90c5ca99765c0019140d857ce6084aba" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/9e/b054fb592b62001919c4f35b917c416f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/a9/90da63b4765c0019140d857ce6084aba" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/b9/b08e9ab32a62001919c4f35b917c416f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/c1/b04675ca2b62001919c4f35b917c416f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/e7/005af3352a62001919c4f35b917c416f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/eb/b09a2054765c0019140d857ce6084aba" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/f7/a03cc497755c0019140d857ce6084aba" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/f7/a0e77263735c0019140d857ce6084aba" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.history/fe/b09fda74735c0019140d857ce6084aba" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/BinarySearchTree/.markers.snap" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/BinarySearchTree/.markers.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/BinarySearchTree/.syncinfo.snap" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/BinarySearchTree/.syncinfo.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/HW1-InsertionSort/.indexes/af/history.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/HW1-InsertionSort/.indexes/e4/history.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/HW1-InsertionSort/.markers" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/HW1-InsertionSort/.markers.snap" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/HW1-InsertionSort/.markers.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/HW1-InsertionSort/.syncinfo.snap" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/HW1-InsertionSort/.syncinfo.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/HW1-InsertionSort/org.eclipse.jdt.core/state.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/.markers.snap" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/.markers.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/1.tree" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/1.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.launching.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.launching.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/1615116574.index" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/1615116574.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/572434113.index" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/572434113.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.recommenders/index/http___download_eclipse_org_recommenders_models_oxygen_/write.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Red Black Tree/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Red Black Tree/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../N-Matts/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ALGO/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ALGO/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ALGO/out/production/ALGO/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ALGO/out/production/ALGO/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ALGO/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ALGO/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BST/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BST/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BST/out/production/BST/Main$BinarySearchTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BST/out/production/BST/Main$BinarySearchTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BST/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BST/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HuffmanHW/Huffman.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HuffmanHW/Huffman.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HuffmanHW/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HuffmanHW/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HuffmanHW/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HuffmanHW/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HuffmanHW/NodeComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HuffmanHW/NodeComparator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Huffman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Huffman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../N-Matts/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../N-Matts/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../N-Matts/out/production/N-Matts/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../N-Matts/out/production/N-Matts/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../N-Matts/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../N-Matts/src/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,16 +29,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Huffman.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+            <state relative-caret-position="450">
+              <caret line="98" column="1" lean-forward="true" selection-start-line="5" selection-end-line="98" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -84,11 +45,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+            <state relative-caret-position="272">
+              <caret line="60" column="14" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -108,15 +72,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Huffman.java" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
@@ -132,7 +89,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -150,12 +106,14 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="F:/CSCD350/Task 4/IntelliJ/src/s19cs350task4" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Red Black Tree" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -197,16 +155,17 @@
       <updated>1557284235400</updated>
       <workItem from="1557284238873" duration="3482000" />
       <workItem from="1557447403607" duration="28000" />
+      <workItem from="1559835158605" duration="1653000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3510000" />
+    <option name="totallyTimeSpent" value="5163000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25426438" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25692964" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -215,7 +174,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35063437" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.34994584" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -241,10 +200,13 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../Huffman/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Huffman.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+        <state relative-caret-position="450">
+          <caret line="98" column="1" lean-forward="true" selection-start-line="5" selection-end-line="98" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -253,8 +215,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+        <state relative-caret-position="272">
+          <caret line="60" column="14" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
