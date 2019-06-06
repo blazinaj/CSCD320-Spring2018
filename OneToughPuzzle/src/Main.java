@@ -149,20 +149,6 @@ public class Main {
             this.leftEdge = newLeft;
             this.topEdge = newTop;
         }
-
-
-
-        public void printPiece(){
-            System.out.println("ID: " + id + "        ");
-            System.out.println();
-            System.out.println("              " + topEdge);
-            System.out.println(leftEdge + "   P   " + rightEdge);
-            System.out.println("              " + bottomEdge);
-            System.out.println();
-            //System.out.println("ID: " + id + " top is: " + topEdge);
-        }
-
-
     }
 
     enum Shape {
